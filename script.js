@@ -26,10 +26,6 @@ goBackbutton.addEventListener("click", function () {
 });
 
 
-
-
-
-
 const questionArray = [
   {
     question: "What is the data type that returns a true or false?",
@@ -59,12 +55,7 @@ const questionArray = [
     choiceC: "C)increment i by one each time",
     Correct: "C)increment i by one each time"
   },
-
-
-
-
 ];
-
 
 
 function startQuiz() {
@@ -86,9 +77,6 @@ function showQuestion() {
   clearInterval(theScore = 0);
   let currentQuestion = 0;
   clearInterval(secondsLeft = 60)
-
-
-
   setTime();
   timerEl.style.display = "block";
   timerEl.textContent = "You have " + secondsLeft + "  seconds left.";
@@ -137,13 +125,9 @@ function clickFunction(event) {
     allDone();
   } else {
 
-
     shownextQuestion();
 
   }
-
-
-
 
 
   if (event.target.textContent === questionArray[currentQuestion].Correct) {
@@ -164,8 +148,6 @@ function clickFunction(event) {
 
 
 }
-
-
 
 function allDone() {
   clearInterval(currentQuestion = 0);
@@ -192,7 +174,6 @@ function allDone() {
 
 function yourScore() {
 
-
   highScoreEl.style.display = "block";
   displayEl.appendChild(highScoreEl);
   // const highScoreStorage = localStorage.getItem("initials","finalScore");
@@ -203,8 +184,6 @@ function yourScore() {
   allDoneEl.style.display = "none"
   yourScoreEl.textContent = theScore;
   highScoreStorageEl.textContent = localStorage.getItem("initials")
-
-
 
 }
 
@@ -229,14 +208,6 @@ function setTime() {
   }
     , 1000);
 }
-
-
-
-
-
-
-
-
 
 startQuiz();
 
