@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+
+    <container class="container">
+        <h4 id="viewHighScores" style="text-align: left;"></h4>
+        <span>
+            <h4 id="timer">
+                <h4></h4>
+        </span>
+    </container>
+
+    <container id="whatShows"></container>
+
+
+    <div id="pressStart" >
+        <h6 > Press Start to Begin Quiz</h6>
+        <button class="start" id="startQuizButton" >Start Quiz</button>
+    </div>
+
+
+
+    <div class="container" id="quizContent">
+        <h4 id="theQuestion">Here goes the text of the question</h4>
+        <button class="answer" id="answerA"></button>
+        <button class="answer" id="answerB"> </button>
+        <button class="answer" id="answerC"></button>
+        <h2 id="answerResultAlert"></h2>
+
+
+    </div>
+
+
+    <div id="allDone">
+        <h4 id>You're all done</h4>
+        <h6>Your Score:</h6> <span>
+            <h6 id="score"></h6>
+        </span>
+        <h6>Enter you initials:</h6><span><input id="initials" type="text" placeholder="Enter your Initials"></span>
+        <button id="submitInitials">Submit</button>
+
+    </div>
+
+
+    <div id="highScore">
+
+        <h6>Your Score: <span id="yourScore">0</span></h6>
+        <button class="start" id="goBack">Go Back</button>
+    </div>
+    </container>
+    <script src="./script.js"></script>
+</body>
+
+</html>

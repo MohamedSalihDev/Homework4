@@ -1,0 +1,46 @@
+
+
+
+h4 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  
+  .container {
+    text-align: center;
+    margin: auto;
+    
+    
+    
+  }
+  
+  button {
+    padding: 10px;
+    margin: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #247BA0;
+    color: white;
+    
+  }
+
+  .start{
+    padding: 10px;
+    margin: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #247BA0;
+    color: white;
+    /* height:20px; 
+    width:100px;  */
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+  }
+  h6 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+  }
