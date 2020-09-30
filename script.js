@@ -176,8 +176,7 @@ function yourScore() {
 
   highScoreEl.style.display = "block";
   displayEl.appendChild(highScoreEl);
-  // const highScoreStorage = localStorage.getItem("initials","finalScore");
-  // highScoreEl.textContent = highScoreStorage;
+  
   startButtonEl.style.display = "none";
   quizEl.style.display = "none";
   timerEl.style.display = "none";
@@ -192,7 +191,6 @@ function yourScore() {
 function setTime() {
 
   const timerInterval = setInterval(function () {
-    // clearInterval(timerInterval);
 
     secondsLeft--;
     timerEl.textContent = "You have " + secondsLeft + "  seconds left.";
